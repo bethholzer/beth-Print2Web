@@ -1,1 +1,79 @@
+body {
+    cursor: url('knife-smaller.png'), auto !important;
+}
+
+.grid{
+    height: 100vh;
+    width: 100vw;
+    background-color: aliceblue;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    /* border: 1px blue solid; */
+    
+}
+
+.box {
+    /* border: 1px blue solid; */
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.top-left{
+    width: 100%;
+    background-color: aliceblue;
+    grid-row-start: 0 / span 2;
+
+}
+
+#knife {
+    transform: translate(40px, 40px);  
+    width: 75%;
+    height: 75%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+.top-right{
+    z-index: 100;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    width: 100%;
+}
+
+.bottom-left{
+    width: 100%;
+}
+
+.bottom-right{
+    width: 100%;
+}
+
+.scream-pink{
+    width: 100%;
+    overflow: hidden;
+}
+
+  /* .scream-yellow{
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+  } */
+
+.yellow{
+    fill: #ffee00;
+    opacity: .99;
+}
+
+.pink{
+    fill:#ff00ae;
+    opacity: .3;
+}
+
+.orange{
+    fill:#ff0000;
+    opacity: .6;
+}
 
