@@ -1,5 +1,6 @@
 body {
     /* cursor: url('knife-smaller.png'), auto !important; */
+    background-color: aliceblue;
     display: flex;
     font-family: 'IBM Plex Mono', monospace;
     font-size: 14px;
@@ -9,19 +10,21 @@ body {
     width: 50vw;
     height: 100vh;
     background-color: aliceblue;
+    flex-direction: row;
+    display: flex;
+    float:left ;
 
 }
 
 .outer{
     height: 100vh;
     width: 50vw;
-    background-color: aliceblue;
-    flex-direction: column;
-    display: flex;
-    flex-direction: column;
+    float: right;
+
 }
 
 .inner-pink{
+    z-index: -2;
     position: absolute; bottom: 0; right: 0;
     background-color: #ff5aac;
     height: 50vh;
@@ -29,6 +32,7 @@ body {
 }
 
 .inner-yellow{
+    z-index: -2;
     position: absolute; bottom: 0; right: 0;
     background-color: rgba(224, 231, 34, .1);
     height: 50vh;
@@ -37,11 +41,10 @@ body {
 
 .cut{
     z-index: 100;
-    height: inherit;
 }
 
 #knife {
-    transform: translate(-210px, 70px); 
+    transform: translate(0px, 70px); 
   }
 
 .scream-pink{
@@ -83,3 +86,82 @@ body {
     opacity: .6;
 }
 
+@media (max-width: 800px){
+
+    body{
+        background-color: black;
+    }
+
+    #knife{
+    transform: translate(70px, 20px); 
+    background-color: black;
+
+    }
+
+    .content-left{
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100vw;     
+    }
+
+    .outer{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        max-height: 400px;
+        color: white;
+    }
+
+    .scream-pink{
+        display: flex;
+        flex-direction: column;
+        opacity: .5;
+        width: 100vw;
+        height: auto;
+      }
+    
+    
+      .scream-yellow{
+        transform: translate(5px, 5px);
+        display: flex;
+        flex-direction: column;
+        opacity: .5;
+        width: 100vw;
+        height: auto;
+      }
+      .inner-pink{
+        display: flex;
+        flex-direction: column;
+        position: relative; bottom: 0;
+        background-color: #ccff00;
+        height: auto;
+        width: 100vw;
+    }
+    
+    .inner-yellow{
+        display: flex;
+        flex-direction: column;
+        position: absolute; bottom: 0;
+        background-color: #ccff00;
+        height: auto;
+        width: 100vw;
+    }
+
+    .yellow{
+        fill: #ccff00;
+        /* opacity: .8; */
+    }
+    
+    .pink{
+        fill: white;
+        opacity: .6;
+    }
+    
+    .orange{
+        fill: grey;
+        opacity: .6;
+    }
+
+}
