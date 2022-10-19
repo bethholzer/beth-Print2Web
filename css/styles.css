@@ -76,15 +76,30 @@ body {
     opacity: .99;
 }
 
+.yellow:hover{
+    opacity: 0;
+    transition: 0.5s;
+  }
+
 .pink{
     fill:#ff00ae;
     opacity: .3;
 }
 
+.pink:hover{
+    opacity: 0;
+    transition: 0.5s;
+  }
+
 .orange{
     fill:#ff0000;
     opacity: .6;
 }
+
+.orange:hover{
+    opacity: 0;
+    transition: 0.5s;
+  }
 
 @media (max-width: 800px){
 
