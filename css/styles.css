@@ -106,14 +106,14 @@ background-image: -webkit-radial-gradient(var(--x) var(--y), #1F51FF,
   #triangle{
     background-color: aliceblue;  
     width: 50vw;
-    height: 62vw;
+    height: 100vh;
     padding-top: 60px;
   }
 
   #triangle-2{
     background-color: aliceblue;  
     width: 50vw;
-    height: 62vw;
+    height: 100vh;
 
   }
   
@@ -184,7 +184,6 @@ background-image: -webkit-radial-gradient(var(--x) var(--y), #1F51FF,
   flex-direction: column;      
   width: 100vw;
   overflow: visible;   
-  /* background-color: aliceblue;   */
  
 
 }
@@ -195,7 +194,6 @@ background-image: -webkit-radial-gradient(var(--x) var(--y), #1F51FF,
   width: 100vw;
   overflow: visible; 
   flex-wrap: wrap;  
-  /* background-color: aliceblue;   */
 
 }
 
