@@ -156,6 +156,7 @@ background-image: -webkit-radial-gradient(var(--x) var(--y), #2092B2,
     width: 50vw;
     white-space: break-spaces;
     overflow: hidden;
+    text-transform: uppercase;
 }  
 
   .scream-pink{
@@ -177,6 +178,7 @@ background-image: -webkit-radial-gradient(var(--x) var(--y), #2092B2,
     width: 50vw;
     white-space: break-spaces;
     overflow: hidden;
+    text-transform: uppercase;
 
 }
 
