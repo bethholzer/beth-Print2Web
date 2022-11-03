@@ -415,6 +415,7 @@ background-image: -webkit-radial-gradient(var(--x) var(--y), #2092B2,
   width: 100vw;
   overflow: visible;   
   background-color: aliceblue;  
+  overflow-x: hidden;
  
 }
 
@@ -423,6 +424,7 @@ background-image: -webkit-radial-gradient(var(--x) var(--y), #2092B2,
   flex-direction: column;      
   width: 100vw;
   overflow: visible;   
+  overflow-x: hidden;
  
 
 }
@@ -468,6 +470,14 @@ background-image: -webkit-radial-gradient(var(--x) var(--y), #2092B2,
   flex-direction: column;    
 }
 
+.squiggle-2{
+  background-color: aliceblue;
+  width: 100vw; 
+  height: auto;
+  display: flex;
+  flex-direction: column;    
+}
+
 #cut{
     width: 100vw;
     white-space: break-spaces;
@@ -506,10 +516,10 @@ background-image: -webkit-radial-gradient(var(--x) var(--y), #2092B2,
   -o-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
-  padding: 50px;
   width: 100vw;
   background-color: transparent;
   justify-content: center;
+  overflow-x: hidden;
 }
 
 #triangle-2 {
@@ -521,26 +531,12 @@ background-image: -webkit-radial-gradient(var(--x) var(--y), #2092B2,
   -o-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
-  padding: 50px;
+  overflow-x: hidden;
   width: 100vw;
   background-color: transparent;
   justify-content: center;
 }
 
-/* 
-#triangle-2 {
-  display: flex;  
-  flex-direction: column;      
-  overflow: visible;  
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-  padding: 50px;
-  background-color: transparent;
-  justify-content: center;
-} */
 
 }
 
